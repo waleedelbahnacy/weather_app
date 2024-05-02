@@ -9,7 +9,8 @@ class WeatherModel
     String weatherStateName;
 
   WeatherModel(
-    { required this.date,
+    {
+    required this.date,
     required this.temp,
     required this.maxTemp,
     required this.minTemp,

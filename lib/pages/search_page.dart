@@ -14,7 +14,7 @@ VoidCallback ? updateUi;
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-       
+       backgroundColor:Colors.blue,
         title: Text('search a city'),
         
       ),
@@ -50,7 +50,7 @@ VoidCallback ? updateUi;
           WeatherModel weather = 
           await    service.getWeather(cityName: cityName!);
           Provider.of<WeatherProvider>(context,listen: false).weatherData=weather;
-          Provider.of(context,listen:false).cityName = cityName;
+          Provider.of<WeatherProvider>(context,listen:false).cityName = cityName;
          
           Navigator.pop(context);
               },
